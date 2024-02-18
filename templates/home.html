@@ -14,17 +14,16 @@
     <h1 class="text-center mt-4 mb-4"">Direct Careers</h1>
     <img class="img-fluid"  src="https://images.unsplash.com/photo-1518893494013-481c1d8ed3fd?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
    <h2 class="text-center mt-4 mb-4">About Direct Careers</h2>
-  <p>we connect talented individuals with top companies seeking their skills and expertise. Whether you're a seasoned professional looking for new opportunities or a recent graduate eager to kickstart your career, we've got you covered.</p>
+  <p>
+    we connect talented individuals with top companies seeking their skills and expertise. Whether you're a seasoned professional looking for new opportunities or a recent graduate eager to kickstart your career, we've got you covered.
+  </p>
   <h2 class="text-center mt-4 mb-4">Open Positions</h2>
-    <div class="job-listing container mt-2 mb-4">
-        <h2>Senior Web Developer</h2>
-        <p><strong>Location:</strong> Austin, TX</p>
-        <p><strong>Posted Date:</strong> February 15, 2024</p>
-        <p><strong>Description:</strong> Lead web development projects; HTML, CSS, JavaScript proficiency required.</p>
-      <div class="text-center">
-        <button class="btn btn-primary me-md-2" type="button">Save</button>
-        <button class="btn btn-primary me-md-2 " type="button">Apply Now</button>
-    </div>
+
+      <div>
+        {% for job in jobs %}
+          {% include 'jobitem.html' %}
+        {% endfor %}
+      </div>
 
   <button class="mt-4 mb-4 btn btn-primary" type="button"">Contact Us</button>
   </div>
