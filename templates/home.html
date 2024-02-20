@@ -10,13 +10,23 @@
   
 </head>
 <body>
+  {% include 'nav.html' %}
+  <div class="banner">
+    <img class="img-fluid"  src="https://images.unsplash.com/photo-1518893494013-481c1d8ed3fd?q=80&w=1740&auto=format&fit=crop&ixlib=rb4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="height:400px; width:100%; object-fit:cover; margin-bottom:16px;">
+  </div>
+  
   <div class="container">
-    <h1 class="text-center mt-4 mb-4"">Direct Careers</h1>
-    <img class="img-fluid"  src="https://images.unsplash.com/photo-1518893494013-481c1d8ed3fd?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
    <h2 class="text-center mt-4 mb-4">About Direct Careers</h2>
+    <div class="row" style="margin-bottom:16px">
+      <div class="d-none d-md-block col-md-4">
+        <img src="/static/suit.jpg" style="height:240px">
+      </div>
+      <div class="col-md-6">
   <p>
-    we connect talented individuals with top companies seeking their skills and expertise. Whether you're a seasoned professional looking for new opportunities or a recent graduate eager to kickstart your career, we've got you covered.
+Welcome to Direct Careers – your gateway to professional success. We're dedicated to simplifying your job search and connecting you with the perfect career opportunities. Our platform offers easy navigation and advanced search options, allowing you to explore thousands of job listings from top companies across various industries. Whether you're a seasoned professional or a recent graduate, Direct Careers has something for you. And for employers, our platform streamlines the hiring process, helping you find the ideal candidates quickly and efficiently. Join Direct Careers today and take the first step towards a brighter future.
   </p>
+    </div>
+    </div>
   <h2 class="text-center mt-4 mb-4">Job Openings</h2>
 
       <div>
@@ -25,10 +35,9 @@
         {% endfor %}
       </div>
 
-    <div class="text-center">
-      <button class="mt-4 mb-4 btn btn-primary" type="button"">Contact Us</button>
-    </div>
   </div>
+
+  {% include 'footer.html' %}
   
 </body>
 </html>
